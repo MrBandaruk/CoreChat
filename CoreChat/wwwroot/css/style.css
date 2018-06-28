@@ -1,0 +1,128 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #566ed8;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 500px;
+    height: 100vh;
+    background-color: #b6c3ff;
+    position: relative;
+}
+
+.message-input {
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    font-size: 22px;
+    margin: 0;
+    padding: 0 10px;
+    border: 1px solid #b6c3ff;
+    border-bottom: none;
+}
+
+.message-input:focus {
+    outline: none;
+}
+
+.messages-container {
+    padding-top: 10px;
+    height: 93vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* width */
+.messages-container::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.messages-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+/* Handle */
+.messages-container::-webkit-scrollbar-thumb {
+    background: #6b6b6b;
+}
+
+    /* Handle on hover */
+.messages-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.message {
+    font-family: monospace;
+    font-size: 20px;
+    padding: 5px 20px;
+}
+
+.login-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    width: 250px;
+    height: 200px;
+}
+
+.login-form h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="text"] {
+    width: 100%;
+    height: 35px;
+    border: 0;
+    padding: 5px 10px;
+    font-size: 25px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="text"]:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form input[type="submit"] {
+    width: 100px;
+    height: 30px;
+    color: #191919;
+    border: 1px solid #424242;
+    background: transparent;
+    font-size: 15px;
+    font-family: monospace;
+    transition: all 0.1s 0s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.login-form input[type="submit"]:hover {
+    background: #424242;
+    color: white;
+}
+
+.login-form input[type="submit"]:hover {
+    outline: none;
+}

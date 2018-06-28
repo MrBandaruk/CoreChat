@@ -1,0 +1,16 @@
+﻿@model string
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<script type="text/javascript">
+    localStorage.setItem("Username", "@Model");
+</script>
+
+<div class="container">
+    <input id="msgInput" class="message-input" type="text" width="300" />
+    <div id="msgs" class="messages-container"></div>
+</div>
+
+<script type="text/javascript" src="~/js/chat.js"></script>

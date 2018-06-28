@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+
+<div class="login-container">
+    <div class="login-form">
+        <h2>Login</h2>
+
+        @using (@Html.BeginForm("Chat", "Home", FormMethod.Post))
+        {
+            @Html.TextBox("Username")
+            <div class="buttons">
+                <input type="submit" value="Отправить"/>
+            </div>
+        }
+    </div>
+</div>
